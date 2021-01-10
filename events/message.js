@@ -16,7 +16,7 @@ module.exports = async (client, message) => {
   //Searching a command aliases
   const aliases = client.commands.find(x => x.info.aliases.includes(command))
 
-  if(message.channel.type === "dm")return message.channel.send("Ямар ч комманд DM-д ажиллахгүй. Сэрвэрт л зөхвөн ажилна!")
+  //if(message.channel.type === "dm")return message.channel.send("Ямар ч комманд DM-д ажиллахгүй. Сэрвэрт л зөхвөн ажилна!")
 process.on("unhandledRejection", (reason, promise) => {
     try {
         console.error("Unhandled Rejection at: ", promise, "Шалтгаан: ", reason.stack || reason);
